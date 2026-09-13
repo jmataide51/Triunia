@@ -1,0 +1,35 @@
+name: Tarefa de Triunia
+description: Correção, melhoria ou nova função
+title: "[Tipo] Título da tarefa"
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Correção
+        - Melhoria
+        - Nova função
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Problema e objetivo
+      description: Explique a necessidade e o comportamento esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: escopo
+    attributes:
+      label: Escopo e critérios de aceite
+      description: Liste resultados verificáveis, incluindo estados de interface aplicáveis.
+    validations:
+      required: true
+  - type: textarea
+    id: validacao
+    attributes:
+      label: Validação e dependências
+      description: Passos para verificar, permissões, dados e dependências relevantes.
+    validations:
+      required: true
